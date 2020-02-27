@@ -10,8 +10,7 @@ exports.create = (req,res) => {
         dataCriacao: new Date
     })
     usuario.save((err) => {
-        if(err) return next(err)
-        err? next(err) : res.send('Registo de usuário criado com sucesso')
+        err ? next(err) : res.send('Registo de usuário criado com sucesso')
     })
 }
 
